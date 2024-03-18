@@ -1,0 +1,32 @@
+#question 2:
+
+#Initial solution:
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t): return False
+
+        S_count, T_count = {}, {}
+
+        for i in range(len(s)):
+            S_count[s[i]] = 1 + S_count.get(s[i],0)
+            T_count[t[i]] = 1 + T_count.get(t[i],0)
+
+        for j in S_count:
+            if S_count[j] != T_count.get(j,0): return False
+
+        return True
+
+#Optimized solution:
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return Counter(s) == Counter(t)
+
+#or
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+
+#concept: use of Dictionary 'get' method, used to avoid getting the KeyError, if the specified element is missing, we can use an alternative value. Also about the Counter subclass of Dict.
