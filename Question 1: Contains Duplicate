@@ -1,0 +1,21 @@
+#question 1:
+
+#Initial solution:
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        nset = set()
+        for i in nums:
+            if i in nset:
+                return True
+            nset.add(i)
+        return False
+
+
+#Optimized solution:
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(nums) != len(set(nums))
+
+#concept: Set can contain only unique values
