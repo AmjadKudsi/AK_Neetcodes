@@ -1,7 +1,5 @@
 # AK_Neetcodes
 
-# Project Name
-
 ## Description
 This repository contains my code implementations for DSA practice.
 
