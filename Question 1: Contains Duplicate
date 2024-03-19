@@ -18,4 +18,27 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         return len(nums) != len(set(nums))
 
-#concept: Set can contain only unique values
+#concepts larned: Set can contain only unique values. '->' is used in the function signature to indicate the return type annotation.
+
+Type annotations in Python provide a way to specify the expected types of function parameters and return values. They are primarily used for documentation purposes, code readability, and static type checking using tools like MyPy.
+
+Parameter Annotations:
+
+Parameter annotations are used to specify the expected type of function parameters.
+They are placed inside the parentheses of the function definition.
+For example, in def some_function(param: int):, param: int indicates that the parameter param is expected to be of type int.
+Return Type Annotation:
+
+Return type annotations specify the expected type of the value returned by a function.
+They are indicated using -> followed by the return type.
+For example, in def some_function() -> str:, -> str indicates that the function is expected to return a string.
+Supported Types:
+
+Type annotations can be built-in types (int, str, list, dict, etc.), custom classes, or abstract types.
+They can also be generic types (List, Tuple, Dict, etc.) from the typing module.
+For example, List[str] indicates a list containing strings, Dict[str, int] indicates a dictionary with string keys and integer values.
+Optional and Union Types:
+
+Optional types are indicated using Optional[type] from the typing module. It means the parameter or return value can be of the specified type or None.
+Union types are indicated using Union[type1, type2, ...] from the typing module. It means the parameter or return value can be of any of the specified types.
+For example, Union[int, None] indicates that the parameter can be either an integer or None.
