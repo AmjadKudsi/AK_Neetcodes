@@ -21,3 +21,8 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 
 [Solution](https://github.com/AmjadKudsi/AK_Neetcodes/blob/main/Question%203%3A%20Two%20Sum)
+
+## Question 4: Group Anagrams
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+[Solution](https://github.com/AmjadKudsi/AK_Neetcodes/blob/main/Question%204%3A%20Group%20Anagrams)
